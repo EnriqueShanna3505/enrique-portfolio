@@ -4,6 +4,8 @@ import profile from '../../assets/profile.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Hero() {
+  const resumeUrl =
+    'https://drive.google.com/file/d/1gwYKfaEDmCLEz5rSoQIb26XbF2hH9J8U/view?usp=sharing';
   return (
     <div id="home" className="hero">
       <img className="profile-img" src={profile} alt="" />
@@ -21,7 +23,11 @@ function Hero() {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume">
+          <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+            My Resume
+          </a>
+        </div>
       </div>
     </div>
   );
